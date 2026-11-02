@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wolf_formidable"
+version = "0.1"
+authors = [
+    {name = "Souheil Chelfouh", email = "trollfot@gmail.com"},
+]
+requires-python = ">=3.11"
+classifiers = ["License :: OSI Approved :: MIT License"]
+dependencies = [
+  "pydantic",
+  "fct_annotate",
+  "html_resources",
+  "MultiDict",
+  "wolf",
+]
+
+[project.optional-dependencies]
+test = [
+    'pytest',
+    'webtest'
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["wolf_formidable"]
+namespaces = false

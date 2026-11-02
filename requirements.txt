@@ -1,0 +1,5 @@
+wolf@git+https://github.com/WolfSGI/wolf.git
+autorouting@git+https://github.com/WolfSGI/autorouting.git
+deform@git+https://github.com/Pylons/deform.git@3977582583d8982d3931b1eacf63c4de4841726e
+git+https://github.com/WolfSGI/html_resources.git#egg=html_resources
+-e .[test]
